@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyPostApp</string>
+
+    <string name="action_remove"> 글 삭제</string>
+</resources>
