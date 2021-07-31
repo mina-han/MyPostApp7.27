@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
             layout_item.addView(tvID)
 
             layout_item.setOnClickListener{
-                val intent = Intent(this, PostLarge::class.java) //PostLarge로 안 넘어갑니다ㅜㅠ
+                var intent = Intent(this, PostLarge::class.java)
                 intent.putExtra("intent_title", str_title)
                 startActivity(intent)
             }

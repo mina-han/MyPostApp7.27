@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
 
+//게시물 작성
 class Posting : AppCompatActivity() {
 
     lateinit var dbManager: DBManager
@@ -51,11 +52,9 @@ class Posting : AppCompatActivity() {
                 sqlitedb.execSQL("INSERT INTO post VALUES ('"+ str_title +"','"+ str_id +"','"+ str_contents +"');")
                 sqlitedb.close()
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, PostLarge::class.java)
             intent.putExtra("intent_title", str_title);
             startActivity(intent)
         }
-
-
     }
 }
